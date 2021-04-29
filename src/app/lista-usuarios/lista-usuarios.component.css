@@ -1,0 +1,36 @@
+.list_all {
+    width: 50%;
+    height: 300px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin:10px;
+}
+
+.title{
+    margin:10px;
+}
+
+.title h1,button{
+    padding: 10px;
+}
+
+.list th,td{
+    padding-left:15px;
+}
+
+.list button{
+    background:#518099;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+}
+
+.title button{
+    background:#518099;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+    margin-bottom: 10px;
+}

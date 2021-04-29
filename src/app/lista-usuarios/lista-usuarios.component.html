@@ -1,0 +1,33 @@
+<div class="list_all">
+    <div class="title">
+        <h1>Lista de usuarios</h1>
+        <button (click)='agregar()'>Agregar</button>
+        <hr>
+    </div>
+
+    <div class="list">
+        <table class="table">
+            <tr>
+                <th>Primer Nombre</th>
+                <th>Segundo Nombre</th>
+                <th>Primer Apellido</th>
+                <th>Segundo Apellido</th>
+                <th>Cédula</th>
+                <th>Correo</th>
+                <th>Teléfono</th>
+                <th>Editar</th>
+            </tr>
+            <tr *ngFor="let usuario of lista">
+                <td>{{usuario.primerNombre}}</td>
+                <td>{{usuario.segundoNombre}}</td>
+                <td>{{usuario.primerApellido}}</td>
+                <td>{{usuario.segundoApellido}}</td>
+                <td>{{usuario.cedula}}</td>
+                <td>{{usuario.correo}}</td>
+                <td>{{usuario.telefono}}</td>
+                <!--routerLink='/formulario'-->
+                <td><button (click)='editar(usuario)'>Editar</button></td>
+            </tr>
+        </table>
+    </div>
+</div>

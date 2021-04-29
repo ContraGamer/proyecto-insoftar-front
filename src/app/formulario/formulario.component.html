@@ -1,0 +1,45 @@
+<div class="formulario">
+    <div class="title">
+    <h1>Formulario de {{tipoFormulario}} de datos</h1>
+</div>
+
+<hr>
+
+<div class="data">
+    <form name ="formEditAdd" [formGroup]="formEditAdd" (ngSubmit)="onSubmit()">
+        <div>
+            <label>Primer Nombre:</label>
+            <input type="text" formControlName='primerNombre' placeholder="Primer Nombre" required>
+        </div>
+        <div>
+            <label>Segundo Nombre:</label>
+            <input type="text"  formControlName='segundoNombre' placeholder="Segundo Nombre" required>
+        </div>
+        <div>
+            <label>Primer Apellido:</label>
+            <input type="text"  formControlName='primerApellido' placeholder="Primer Apellido" required>
+        </div>
+        <div>
+            <label>Segundo Apellido:</label>
+            <input type="text"  formControlName='segundoApellido' placeholder="Segundo Apellido" required>
+        </div>
+        <div>
+            <label>Cédula:</label>
+            <input type="number"  formControlName='cedula' placeholder="Cédula" required>
+        </div>
+        <div>
+            <label>Correo:</label>
+            <input type="email"  formControlName='correo' placeholder="Correo" required [email]="true">
+        </div>
+        <div>
+            <label>Telefono:</label>
+            <input type="tel"  formControlName='telefono' placeholder="Teléfono" required>
+        </div>
+        <div>
+            <button type="submit" [disabled]="!formEditAdd.valid">Submit</button>
+            <button (click)='atras()'>Atras</button>
+        </div>
+    </form>
+
+</div>
+</div>
